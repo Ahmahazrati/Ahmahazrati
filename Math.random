@@ -1,0 +1,26 @@
+package javaapplication51;
+
+import java.util.Scanner;
+
+public class JavaApplication51 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int NO1, NO2;
+
+        NO1 = (int) (Math.random() * 50);
+        NO2 = (int) (Math.random() * 30);
+
+        double sum = NO1 - NO2;
+
+        System.out.println("What is the answer of " + NO1 + "-" + NO2 + "=?");
+        double userin = input.nextDouble();
+        if (sum == userin) {
+            System.out.println("Your answer is correct thank you ");
+        } else {
+            System.out.println("Your answer is wrong ");
+
+        }
+    }
+
+}
